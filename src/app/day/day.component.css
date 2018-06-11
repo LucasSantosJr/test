@@ -1,0 +1,15 @@
+.details {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  display: -webkit-flex;
+  align-content: space-between;
+  flex-wrap: wrap
+}
+
+.details p {
+  text-align: center;
+  margin: auto;
+  color: grey;
+  width: 30%
+}

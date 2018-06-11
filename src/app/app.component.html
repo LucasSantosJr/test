@@ -1,0 +1,20 @@
+<div class="container">
+  <div *ngFor="let day of days" class="column" (click)="selectOrUnselectDay(day.id)">
+    <div class="inner-column-left">
+      <p id="day-short-name">
+        {{day.short}}
+      </p>
+      <p id="day-number">
+        {{day.number}}
+      <p>
+    </div>
+    <div class="inner-column-right">
+      <p>
+        {{day.name}}
+      </p>
+    </div>
+    <div class="details" *ngIf="selectedDay && selectedDay.id == day.id">
+      <app-day [day]="selectedDay"></app-day>
+    </div>
+  </div>
+</div>
